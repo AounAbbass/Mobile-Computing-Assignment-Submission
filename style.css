@@ -1,9 +1,11 @@
 body {
   padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #07f1e5;
 }
   /* Add an active class to highlight the current page */
 #fixednav {
-  background-color: #07f178;
+  background-color: #07f1e5;
   position: relative;
   top: -50px;
   margin-bottom: 0;
@@ -12,12 +14,13 @@ body {
 }
 
 .navbar-light {
-  background-color: #07f178;
+  background-color: #07f1e5;
   position: fixed;
   top: 0.5px;
   width: 100%;
   overflow: hidden;
 }
+
 
 .jumbotron p{
    font-size: small;
@@ -30,28 +33,43 @@ body {
 
 .navbar-brand {
   color: black !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 26px;
 }
 
-.nav .navbar-nav {
-  color: black !important;
+
+nav .nav-link {
+  color: rgb(15, 15, 15) !important;
 }
+
+nav .navbar-nav .nav-item>a:hover {
+  color: rgb(238, 240, 238) !important;
+}
+
+/*code to change background color*/
+.navbar-nav>.active>a {
+  background-color: #fcf6f6 !important;
+}
+
 
 
 footer {
   text-align: center;
   padding: 3px;
-  background-color: #07f178;
+  background-color: #07f1e5;
   color: black;
 }
 
 
 
 .navbar-toggle.collapsed {
-  background-color: #000 !important;
+  background-color: #07f1e5 !important;
+
 }
 
 .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
-  background-color: #07f178 !important;
+  background-color: #07f1e5 !important;
 }
 
 .largeimg {
