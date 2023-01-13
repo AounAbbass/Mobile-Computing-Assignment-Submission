@@ -131,7 +131,7 @@ if (isset($_POST['reg_user'])) {
   			  VALUES('$Email','$password')";
         mysqli_query($db, $query);
         $_SESSION['Email'] = $Email;
-        $_SESSION['success'] = "You are now logged in";
+        $_SESSION['success'] = "Your information has been saved Successfully";
         header('location: Register.php');
     }
 }
