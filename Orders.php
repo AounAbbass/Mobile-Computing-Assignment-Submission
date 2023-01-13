@@ -36,7 +36,7 @@
 
   </div>
   <div class="container">
-    <form action="Orders.php" method="post">
+    <form action="orders.php" method="post">
       <div class="col-md-7 col-lg-8">
         <h4 class="mb-3">Billing Details</h4>
         <div class="row g-3">
@@ -53,10 +53,9 @@
             <label for="Address" class="form-label">Address</label>
             <input type="text" name="Address" placeholder="1234 Main St">
           </div>
-
-          <div class="col-md-3">
+          <div class="col-sm-6">
             <label for="Zip" class="form-label">Zip</label>
-            <input type="text" name="Zip" placeholder="e.g. 46000">
+            <input type="Zip" name="Zip" placeholder="e.g.123456">
           </div>
 
           <button class="w-100 btn btn-primary btn-lg" style="margin-left: 100px; margin-top: 5px;" type="submit"
@@ -88,21 +87,18 @@ $errors = array();
 $db = mysqli_connect('localhost', 'root', '', 'ezmerch');
 
 // REGISTER USER
-if (isset($_POST['reg_user'])) {
+if (isset($_POST['submit'])) {
   // receive all input values from the form
   $Name = mysqli_real_escape_string($db, $_POST['Name']);
   $Email = mysqli_real_escape_string($db, $_POST['Email']);
   $Address = mysqli_real_escape_string($db, $_POST['Address']);
+  $Zip = mysqli_real_escape_string($db, $_POST['Zip']);
 
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
-  if (empty($Email)) {
-    array_push($errors, "Username is required");
-  }
-
-  if (empty($password)) {
-    array_push($errors, "Password is required");
+  if (empty($Name)) {
+    array_push($errors, "Name is required");
   }
 
   // first check the database to make sure 
@@ -113,7 +109,7 @@ if (isset($_POST['reg_user'])) {
 
   if ($user) { // if user exists
     if ($user['Email'] === $Email) {
-      array_push($errors, "Username already exists");
+      array_push($errors, "Order already exists");
     }
 
 
@@ -123,8 +119,8 @@ if (isset($_POST['reg_user'])) {
   if (count($errors) == 0) {
     $password = md5($password); //encrypt the password before saving in the database
 
-    $query = "INSERT INTO orders (Name,Email,Address) 
-  			  VALUES('$Name','$Email','$password')";
+    $query = "INSERT INTO orders (Name,Email,Address,Zip) 
+  			  VALUES('$Name','$Email','$Address','$Zip')";
     mysqli_query($db, $query);
     $_SESSION['Email'] = $Email;
     $_SESSION['success'] = "Your information has been saved Successfully";
