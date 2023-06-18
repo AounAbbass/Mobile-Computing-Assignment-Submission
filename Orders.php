@@ -58,12 +58,12 @@
           </div>
 
           <button class="w-100 btn btn-primary btn-lg" style="margin-left: 100px; margin-top: 5px;" type="submit"
-            name="submit">Place Order</button>
-          <div class="popup">
+            name="submit" onclick="openPopup()">Place Order</button>
+          <div class="popup" id="popup">
             <img src="./photos/tick.png">
             <h2>Order Placed Successfully!>
               <p>Your Details have been saved. We'll contact you when your order is ready. Thanks!<p>
-              <button type="button">Ok</button>
+              <button type="button" onclick="closePopup()">Ok</button>
           </div>
 
           
@@ -81,6 +81,13 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      let popup =document.getElementById("popup");
+
+      function openPopup()
+      
+    </script>
 </body>
 
 </html>
