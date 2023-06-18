@@ -212,6 +212,13 @@ input[type=submit]:hover {
   padding: 20 30px 30px;
   color: #333;
   visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 70%;
+  transform: translate(-50%, -50%) scale(0.5);
 }
 
 .popup img{
