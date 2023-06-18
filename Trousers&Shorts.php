@@ -32,8 +32,7 @@
           <li class="nav-item"><a class="nav-link" href="./T-Shirts.php">T-Shirts</a></li>
           <li class="nav-item active"><a class="nav-link" href="./Trousers&Shorts.php">Trousers/Shorts</a></li>
           <li class="nav-item"><a class="nav-link" href="./Orders.php">Orders</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Contact-Us.php">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Register.php">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contactus.php">ContactUs</a></li>
         </ul>
   </nav>
 

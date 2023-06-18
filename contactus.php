@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-  <title>contactus</title>
+  <title>ContactUs</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <nav class="d-flex navbar navbar-inverse navbar-dark bg-light no-wrap" id="fixednav">
+<nav class="d-flex navbar navbar-inverse navbar-dark bg-light no-wrap" id="fixednav">
     <div class="container-fluid">
       <div class="navbar-header">
 
@@ -29,10 +29,11 @@
           <li class="nav-item"><a class="nav-link" href="./T-Shirts.php">T-Shirts</a></li>
           <li class="nav-item"><a class="nav-link" href="./Trousers&Shorts.php">Trousers/Shorts</a></li>
           <li class="nav-item"><a class="nav-link" href="./Orders.php">Orders</a></li>
-          <li class="nav-item active"><a class="nav-link" href="./Contact-Us.php">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Register.php">Register</a></li>
+          <li class="nav-item active"><a class="nav-link" href="./contactus.php">ContactUs</a></li>
         </ul>
   </nav>
+
+</div>
   <div class="container">
     <form action="contactus.php" method="post">
 
@@ -52,6 +53,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </form>
+
     <footer>
       <div class="container">
         <div class="row">
@@ -64,6 +66,8 @@
         </div>
       </div>
     </footer>
+
+
 </body>
 
 </html>

@@ -6,12 +6,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
-    integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
-  <link>
   <link rel="stylesheet" href="./style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -32,8 +30,7 @@
           <li class="nav-item"><a class="nav-link" href="./T-Shirts.php">T-Shirts</a></li>
           <li class="nav-item"><a class="nav-link" href="./Trousers&Shorts.php">Trousers/Shorts</a></li>
           <li class="nav-item"><a class="nav-link" href="./Orders.php">Orders</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Contact-Us.php">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Register.php">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contactus.php">ContactUs</a></li>
         </ul>
   </nav>
 
