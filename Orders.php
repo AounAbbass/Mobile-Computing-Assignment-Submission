@@ -31,11 +31,11 @@
           <li class="nav-item active"><a class="nav-link" href="./Orders.php">Orders</a></li>
           <li class="nav-item"><a class="nav-link" href="./contactus.php">ContactUs</a></li>
         </ul>
+        </div>
   </nav>
 
-  </div>
   <div class="container">
-    <form action="orders.php" method="post">
+  <form action="orders.php" method="post" onsubmit="event.preventDefault(); openPopup();">
       <div class="col-md-7 col-lg-8">
         <h4 class="mb-3">Billing Details</h4>
         <div class="row g-3">
@@ -57,18 +57,19 @@
             <input type="Zip" name="Zip" placeholder="e.g.123456">
           </div>
 
-          <button class="w-100 btn btn-primary btn-lg" style="margin-left: 100px; margin-top: 5px;" type="submit"
-            name="submit" onclick="openPopup()">Place Order</button>
-          <div class="popup" id="popup">
-            <img src="./photos/tick.png">
-            <h2>Order Placed Successfully!>
-              <p>Your Details have been saved. We'll contact you when your order is ready. Thanks!<p>
-              <button type="button" onclick="closePopup()">Ok</button>
-          </div>
-
-          
-    </form>
-
+          <div class="container">
+        <button class="w-100 btn btn-primary btn-lg" style="margin-left: 100px; margin-top: 5px;" type="submit" name="submit">Place Order</button>
+      </div>
+      
+      <div class="popup" id="popup">
+        <img src="/photos/tick.png">
+        <h2>Order Received Successfully!</h2>
+        <p>You will receive a response soon.</p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+  </form>
+</div>
     <footer>
       <div class="container">
         <div class="row">
@@ -80,20 +81,24 @@
           </div>
         </div>
       </div>
-    </footer>
+   </div>
+   </footer>
+   
+<script>
+   function openPopup() {
+  var popup = document.getElementById("popup");
+  popup.classList.add("open-popup");
+}
 
-    <script>
-      let popup =document.getElementById("popup");
+function closePopup() {
+  var popup = document.getElementById("popup");
+  popup.classList.remove("open-popup");
 
-      function openPopup(){
-        popup.classList.add("open-popup");
-      }
+  // Submit the form
+  document.querySelector("form").submit();
+}
+</script>
 
-      function closePopup(){
-        popup.classList.remove("open-popup");
-      }
-
-    </script>
 </body>
 
 </html>
@@ -143,9 +148,7 @@ if (isset($_POST['submit'])) {
   			  VALUES('$Name','$Email','$Address','$Zip')";
     mysqli_query($db, $query);
     $_SESSION['Email'] = $Email;
-    $_SESSION['success'] = "Your information has been saved Successfully";
     header('location: orders.php');
   }
 }
 
-?>
