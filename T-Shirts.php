@@ -74,7 +74,7 @@
         <h3>Type</h3>
         <div class="dropdown" style="padding-left: 15px; padding-top: 15px;">
           <select id="dropdown-list">
-            <option value="Pewds Pewds-T-Father-and-Son-Shirt"selected>Pewds-T-Father-and-Son-Shirt-<b>$29.99</option>
+            <option value="Pewds-T-Father-and-Son-Shirt"selected>Pewds-T-Father-and-Son-Shirt-<b>$29.99</option>
             <option value="Pew-Gamers-Shirt">PewdiePie Gamers Tee-<b>$19.99</option>
             <option value="Pewdiepie Pewds-70mill-club-Shirt">Pewdiepie 70mill Club Tee-<b>$49.99</option>
           </select>
@@ -84,20 +84,16 @@
       <div class="container" id="pewdsdrop">
         <h3>Size</h3>
         <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Size
-            <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li class="active"><a href="#">Small</a></li>
-            <li><a href="#">Medium</a></li>
-            <li><a href="#">Large</a></li>
-            <li><a href="#">Extra-Large</a></li>
-          </ul>
+            <select id="dropdown-list">
+            <option value="S"selected>Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra-Large</option>
+          </select>
         </div>
 
-        <a href="Orders.php" class="btn btn-danger" id="shopbtn1" role="button">Buy Now!</a>
+        <a href="Orders.php" class="btn btn-danger btn-sm" id="shopbtn1" role="button">Buy Now!</a>
       </div>
-
-
 
       <div class="container">
         <h2>KSI</h2>
@@ -133,31 +129,26 @@
           <div class="container" id="ksidrop">
             <h3>Type</h3>
             <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your
-                Tee</button>
-              <span class="caret"></span>
-              <ul class="dropdown-menu">
-                <li><a href="./photos/KSI T-Shirt 1.jpg">KSI Baldski Tee-<b>$19.99</b></a></li>
-                <li><a href="./photos/KSI T-Shirt 2.jpg">KSI Saiyan Tee-<b>$25.00</b></a></li>
-                <li><a href="./photos/KSI T-Shirt 3.jpg">KSI Keep Up Tee-<b>$21.99</b></a></li>
-              </ul>
+              <select id="dropdown-list">
+                <option value="KSI-Baldski-Tee"selected>KSI Baldski Tee-<b>$19.99</option>
+                <option value="KSI-Saiyan-Tee">KSI Saiyan Tee-<b>$24.99</option>
+                <option value="KSI-Keep-Up-Tee">KSI Keep Up Tee-<b>$20.99</option>
+              </select>
             </div>
           </div>
 
           <div class="container" id="ksidrop">
             <h3>Size</h3>
             <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Size
-                <span class="caret"></span>
-                <ul class="dropdown-menu">
-                  <li class="active"><a href="#">Small</a></li>
-                  <li><a href="#">Medium</a></li>
-                  <li><a href="#">Large</a></li>
-                  <li><a href="#">Extra-Large</a></li>
-                </ul>
-            </div>
+            <select id="dropdown-list">
+              <option value="S"selected>Small</option>
+              <option value="M">Medium</option>
+              <option value="L">Large</option>
+              <option value="XL">Extra-Large</option>
+            </select>
+          </div>
 
-            <a href="Orders.php" class="btn btn-danger" id="shopbtn1" role="button">Buy Now!</a>
+            <a href="Orders.php" class="btn btn-danger btn-sm" id="shopbtn1" role="button">Buy Now!</a>
           </div>
 
         </div>
@@ -193,29 +184,25 @@
             <div class="container" id="beastdrop">
               <h3>Type</h3>
               <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Tee
-                  <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li><a href="./photos/MR Beast Tee 1.jpg">Mr Beast Tee-<b>$35.00</b></a></li>
-                  <li><a href="./photos/Mr Beast Essential Tee.jpg">Mr Beast Essential Tee-<b>$29.99</b></a></li>
-                  <li><a href="./photos/Mr Beast Youth Tee.jpg">Mr Beast Youth Tee-<b>$31.99</b></a></li>
-                </ul>
+                <select id="dropdown-list">
+                <option value="Mr-Beast-Tee"selected>Mr Beast Tee<b>$35.00</option>
+                <option value="Mr-Beast-Essentials-Tee">Mr Beast Essential Youth Tee-<b>$29.99</option>
+                <option value="Mr-Beast-Youth-Tee">Mr Beast Youth Tee-<b>$31.99</option>
+              </select>
               </div>
             </div>
 
             <div class="container" id="beastdrop">
               <h3>Size</h3>
               <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Size
-                  <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li class="active"><a href="#">Small</a></li>
-                  <li><a href="#">Medium</a></li>
-                  <li><a href="#">Large</a></li>
-                  <li><a href="#">Extra-Large</a></li>
-                </ul>
+                  <select id="dropdown-list">
+                    <option value="S"selected>Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra-Large</option>
+                  </select>
               </div>
-              <a href="Orders.php" class="btn btn-danger" id="shopbtn1" role="button">Buy Now!</a>
+              <a href="Orders.php" class="btn btn-danger btn-sm" id="shopbtn1" role="button">Buy Now!</a>
             </div>
 
           </div>
