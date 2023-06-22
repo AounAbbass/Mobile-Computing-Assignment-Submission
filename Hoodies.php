@@ -71,29 +71,23 @@
       <div class="container" id="pewdsdrop">
         <h3>Type</h3>
         <div class="dropdown" style="padding-left: 15px; padding-top: 15px;">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Hoodie
-            <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a
-                href="./photos/pewdiepie-70-mill-club-zipper-hoodie.jpg">Pewdiepie-70-mill-club-hoodie-<b>59.79$</b></a>
-            </li>
-            <li><a href="./photos/Pewdiepie Pew-News-Hoodie.png">Pewdiepie-News-Hoodie-<b>39.99$</b></a></li>
-            <li><a href="./photos/Pewds Anime Hoodie.png">Pewdiepie-Anime-Hoodie-<b>49.99$</b></a></li>
-          </ul>
+         <select id="dropdown-list">
+            <option value="Hoodie"selected>Pewdiepie 70 mill Club Hoodie-<b>$59.99</option>
+            <option value="Hoodie">PewdiePie News Hoodie-<b>$45.00</option>
+            <option value="Hoodie">Pewdiepie Anime Hoodie -<b>$50.00</option>
+         </select>
         </div>
       </div>
 
       <div class="container" id="pewdsdrop">
         <h3>Size</h3>
         <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Size
-            <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li class="active"><a href="#">Small</a></li>
-            <li><a href="#">Medium</a></li>
-            <li><a href="#">Large</a></li>
-            <li><a href="#">Extra-Large</a></li>
-          </ul>
+          <select class="dropdown" id="dropdown-list">
+              <option value="S"selected>Small</option>
+              <option value="M">Medium</option>
+              <option value="L">Large</option>
+              <option value="XL">Extra-Large</option>
+            </select>
         </div>
         <a href="Orders.php" class="btn btn-danger" id="shopbtn1" role="button">Buy Now!</a>
       </div>
@@ -134,28 +128,23 @@
         <div class="container" id="ksidrop">
           <h3>Type</h3>
           <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your
-              Hoodie</button>
-            <span class="caret"></span>
-            <ul class="dropdown-menu">
-              <li><a href="./photos/AOTP Headline Tour Hoodie.jpg">KSI-AOTP-Headline-Tour-Hoodie-<b>75.00$</b></a></li>
-              <li><a href="./photos/Not Over Yet Hoodie.jpg">KSI-Not Over Yet Hoodie-<b>$75.00</b></a></li>
-              <li><a href="./photos/AOTP Orange Hoodie.jpeg">KSI-AOTP Orange Hoodie-<b>75.00$</b></a></li>
-            </ul>
+          <select id="dropdown-list">
+            <option value="Hoodie"selected>KSI AOTP Headline Tour Hoodie-<b>$59.99</option>
+            <option value="Hoodie">KSI Not Over Yet Hoodie-<b>$40.00</option>
+            <option value="Hoodie">KSI KSI Headline Tour Orange Hoodie-<b>$59.00</option>
+         </select>
           </div>
         </div>
 
         <div class="container" id="ksidrop">
           <h3>Size</h3>
           <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Size
-              <span class="caret"></span>
-              <ul class="dropdown-menu">
-                <li class="active"><a href="#">Small</a></li>
-                <li><a href="#">Medium</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Extra-Large</a></li>
-              </ul>
+             <select class="dropdown" id="dropdown-list">
+             <option value="S"selected>Small</option>
+             <option value="M">Medium</option>
+             <option value="L">Large</option>
+             <option value="XL">Extra-Large</option>
+            </select>
           </div>
 
           <a href="Orders.php" class="btn btn-danger" id="shopbtn1" role="button">Buy Now!</a>
@@ -195,27 +184,23 @@
             <div class="container" id="beastdrop">
               <h3>Type</h3>
               <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Hoodie
-                  <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li><a href="./photos/Squid Game Hoodie.jpg">Mr Beast Squid-Game-Hoodie-<b>60.00$</b></a></li>
-                  <li><a href="./photos/Mr Beast Hoodie.jpg">Mr Beast Hoodie-<b>54.99$</b></a></li>
-                  <li><a href="./photos/Grey Pullover Hoodie.jpg">Mr Beast Grey Pullover Hoodie-<b>54.99$</b></a></li>
-                </ul>
+              <select id="dropdown-list">
+                <option value="Hoodie"selected>KSI AOTP Headline Tour Hoodie-<b>$59.99</option>
+                <option value="Hoodie">KSI Not Over Yet Hoodie-<b>$40.00</option>
+                <option value="Hoodie">KSI KSI Headline Tour Orange Hoodie-<b>$59.00</option>
+              </select>
               </div>
             </div>
 
             <div class="container" id="beastdrop">
               <h3>Size</h3>
               <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Size
-                  <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li class="active"><a href="#">Small</a></li>
-                  <li><a href="#">Medium</a></li>
-                  <li><a href="#">Large</a></li>
-                  <li><a href="#">Extra-Large</a></li>
-                </ul>
+              <select class="dropdown" id="dropdown-list">
+                <option value="S"selected>Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">Extra-Large</option>
+              </select>
               </div>
               <a href="Orders.php" class="btn btn-danger" id="shopbtn1" role="button">Buy Now!</a>
             </div>
@@ -243,6 +228,7 @@
 
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
 </body>
 
