@@ -33,72 +33,70 @@
         </ul>
         </div>
   </nav>
-
   <div class="container">
   <form action="orders.php" method="post" onsubmit="event.preventDefault(); openPopup();">
-      <div class="col-md-7 col-lg-8">
-        <h4 class="mb-3">Billing Details</h4>
-        <div class="row g-3">
-          <div class="col-sm-6">
-            <label for="Name" class="form-label">Name</label>
-            <input type="text" name="Name" placeholder="Enter your Full Name">
-          </div>
-
-          <div class="col-sm-6">
-            <label for="Email" class="form-label">Email</label>
-            <input type="text" name="Email" placeholder="Enter your Email">
-          </div>
-          <div class="col-sm-6">
-            <label for="Address" class="form-label">Address</label>
-            <input type="text" name="Address" placeholder="1234 Main St">
-          </div>
-          <div class="col-sm-6">
-            <label for="Zip" class="form-label">Zip</label>
-            <input type="Zip" name="Zip" placeholder="e.g.123456">
-          </div>
-
-          <div class="container">
-        <button class="w-100 btn btn-primary btn-lg" style="margin-left: 100px; margin-top: 5px;" type="submit" name="submit">Place Order</button>
-      </div>
-      
-      <div class="popup" id="popup">
-        <img src="/photos/tick.png">
-        <h2>Order Received Successfully!</h2>
-        <p>You will receive a response soon.</p>
-        <button type="button" onclick="closePopup()">OK</button>
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Billing Details</h4>
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="Name" class="form-label">Name</label>
+          <input type="text" name="Name" placeholder="Enter your Full Name">
+        </div>
+        <div class="col-sm-6">
+          <label for="Email" class="form-label">Email</label>
+          <input type="text" name="Email" placeholder="Enter your Email">
+        </div>
+        <div class="col-sm-6">
+          <label for="Address" class="form-label">Address</label>
+          <input type="text" name="Address" placeholder="1234 Main St">
+        </div>
+        <div class="col-sm-6">
+          <label for="Zip" class="form-label">Zip</label>
+          <input type="text" name="Zip" placeholder="e.g.123456">
+        </div>
+        <div class="container">
+          <button class="w-100 btn btn-primary btn-lg" style="margin-left: 100px; margin-top: 5px;" type="submit" name="submit">Place Order</button>
+        </div>
+        <div class="popup" id="popup">
+          <img src="/photos/tick.png">
+          <h2>Order Received Successfully!</h2>
+          <p>You will receive a response soon.</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
       </div>
     </div>
   </form>
 </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="row justify-content-center">
-            <div class="col-auto">
-              <p>© Copyright 2022 EzMerch</p>
-            </div>
-            <a href="mailto:hege@example.com">maliccaoun@gmail.com</a></p>
-          </div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <p>© 2022 EzMerch</p>
         </div>
+        <a href="mailto:hege@example.com">maliccaoun@gmail.com</a></p>
       </div>
-   </div>
-   </footer>
-   
+    </div>
+  </div>
+</footer>
+
 <script>
-   function openPopup() {
-  var popup = document.getElementById("popup");
-  popup.classList.add("open-popup");
-}
+  function openPopup() {
+    var popup = document.getElementById("popup");
+    popup.classList.add("open-popup");
+  }
 
-function closePopup() {
-  var popup = document.getElementById("popup");
-  popup.classList.remove("open-popup");
+  function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.classList.remove("open-popup");
 
-  // Submit the form
-  document.querySelector("form").submit();
-}
+    var form = document.querySelector("form");
+    form.submit();
+  }
 </script>
 
+    
 </body>
 
 </html>
@@ -152,3 +150,4 @@ if (isset($_POST['submit'])) {
   }
 }
 
+?>

@@ -73,13 +73,11 @@
       <div class="container" id="pewdsdrop">
         <h3>Type</h3>
         <div class="dropdown" style="padding-left: 15px; padding-top: 15px;">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Tee
-            <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="./photos/Pewds T-Shirt.jpg">Pewdiepie Father $ Son Tee-<b>$29.99</b></a></li>
-            <li><a href="./photos/Pewds T-Shirt 2.jpg">Pewdiepie gamers Tee-<b>$19.99</b></a></li>
-            <li><a href="./photos/Pewds T-Shirt 3.jpg">Pewdiepie 70 mill club Tee-<b>$49.99</b></a></li>
-          </ul>
+          <select id="dropdown-list">
+            <option value="Pewds Pewds-T-Father-and-Son-Shirt"selected>Pewds-T-Father-and-Son-Shirt-<b>$29.99</option>
+            <option value="Pew-Gamers-Shirt">PewdiePie Gamers Tee-<b>$19.99</option>
+            <option value="Pewdiepie Pewds-70mill-club-Shirt">Pewdiepie 70mill Club Tee-<b>$49.99</option>
+          </select>
         </div>
       </div>
 
