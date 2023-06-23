@@ -35,6 +35,7 @@
 
 </div>
   <div class="container">
+  <h4 class="mb-3" style="font-weight: bold;">Contact Us Now</h4>
     <form action="contactus.php" method="post" onsubmit="openModal()" id="myForm">
 
       <label for="Name">Full Name</label>
@@ -57,7 +58,8 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title"><b>Order Details Recieved Successfully!</b></h4>
+        <h4 class="modal-title"><b>Thanks for the Feeback!</b></h4>
+        <p>Our team will get back to you soon on your Email</p>
       </div>
       <div class="modal-footer justify-content-center">
         <button id="closebtn" type="button" class="btn btn-success" data-dismiss="modal">Close</button>

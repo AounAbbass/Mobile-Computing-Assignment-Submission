@@ -248,3 +248,8 @@ input[type=submit]:hover {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 2);
 }
 
+#contacthead {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 24px;
+}
