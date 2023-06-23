@@ -73,28 +73,23 @@
       <div class="container" id="pewdsdrop">
         <h3>Type</h3>
         <div class="dropdown" style="padding-left: 15px; padding-top: 15px;">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Short/Trouser
-            <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="./photos/Yeah Brofist Short.jpg">Pewdiepie Yeah Brofist Short-<b>$22.99</b></a></li>
-            <li><a href="./photos/Pewds Red and Black Jogger Pants">Pewdiepie Red and Black Jogger
-                Pants-<b>$19.99</b></a></li>
-            <li><a href="./photos/Pewds Leggings.jpg">Pewdiepie Leggings-<b>$18.99</b></a></li>
-          </ul>
+        <select id="dropdown-list">
+            <option value="Short"selected>Pewdiepie Yeah Brofist Short-<b>$22.99</option>
+            <option value="Short">Pewdiepie Red and Black Jogger Pants-<b>$19.99</option>
+            <option value="Short">Pewdiepie Leggings-<b>$18.99</option>
+          </select>
         </div>
       </div>
 
       <div class="container" id="pewdsdrop">
         <h3>Size</h3>
         <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Size
-            <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li class="active"><a href="#">Small</a></li>
-            <li><a href="#">Medium</a></li>
-            <li><a href="#">Large</a></li>
-            <li><a href="#">Extra-Large</a></li>
-          </ul>
+          <select id="dropdown-list">
+            <option value="S"selected>Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra-Large</option>
+          </select>
         </div>
         <a href="Orders.php" class="btn btn-danger" id="shopbtn1" role="button">Buy Now!</a>
       </div>
@@ -130,28 +125,24 @@
           <div class="container" id="beastdrop">
             <h3>Type</h3>
             <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Trouser
-                <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li><a href="./photos/MrBeast Raptor Leggings.jpg">Mr Beast Raptor Leggings-<b>$35.99</b></a></li>
-                <li><a href="./photos/Mr Beast Trousers">Mr Beast Trousers-<b>$25.99</b></a></li>
-                <li><a href="./photos/Mr Beast Leggings.jpgjpg">Mr Beast Leggings-<b>$30.99</b></a></li>
-              </ul>
+            <select id="dropdown-list">
+            <option value="Trouser"selected>Mr Beast Raptor Leggings-<b>$22.99</option>
+            <option value="Short">Mr Beast Trouser-<b>$25.99</option>
+            <option value="Short">Mr Beast Leggings-<b>$30.99</option>
+          </select>
             </div>
           </div>
 
           <div class="container" id="beastdrop">
             <h3>Size</h3>
             <div class="dropdown" style="padding-left: 20px; padding-top: 15px;">
-              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select your Size
-                <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li class="active"><a href="#">Small</a></li>
-                <li><a href="#">Medium</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Extra-Large</a></li>
-              </ul>
-            </div>
+              <select id="dropdown-list">
+               <option value="S"selected>Small</option>
+               <option value="M">Medium</option>
+               <option value="L">Large</option>
+               <option value="XL">Extra-Large</option>
+              </select>
+             </div>
 
             <a href="Orders.php" class="btn btn-danger" id="shopbtn1" role="button">Buy Now!</a>
           </div>

@@ -34,7 +34,7 @@
         </div>
   </nav>
   <div class="container">
-  <form action="orders.php" method="post" onsubmit="event.preventDefault(); openPopup();">
+  <form action="orders.php" method="post" onsubmit="openModal()" id="myForm">
     <div class="col-md-7 col-lg-8">
       <h4 class="mb-3">Billing Details</h4>
       <div class="row g-3">
@@ -57,15 +57,24 @@
         <div class="container">
           <button class="w-100 btn btn-primary btn-lg" style="margin-left: 100px; margin-top: 5px;" type="submit" name="submit">Place Order</button>
         </div>
-        <div class="popup" id="popup">
-          <img src="/photos/tick.png">
-          <h2>Order Received Successfully!</h2>
-          <p>You will receive a response soon.</p>
-          <button type="button" onclick="closePopup()">OK</button>
-        </div>
       </div>
     </div>
   </form>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"><b>Order Details Recieved Successfully!</b></h4>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button id="closebtn" type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 </div>
 
 <footer>
@@ -82,20 +91,20 @@
 </footer>
 
 <script>
-  function openPopup() {
-    var popup = document.getElementById("popup");
-    popup.classList.add("open-popup");
+  function openModal() {
+    $('#myModal').modal('show');
+    event.preventDefault();
   }
 
-  function closePopup() {
-    var popup = document.getElementById("popup");
-    popup.classList.remove("open-popup");
-
-    var form = document.querySelector("form");
+  function submitForm() {
+    var form = document.getElementById("myForm");
     form.submit();
   }
-</script>
 
+  $('#myModal').on('hidden.bs.modal', function () {
+    submitForm();
+  });
+</script>
     
 </body>
 
