@@ -35,7 +35,7 @@
 
 </div>
   <div class="container">
-    <form action="contactus.php" method="post">
+    <form action="contactus.php" method="post" onsubmit="openModal()" id="myForm">
 
       <label for="Name">Full Name</label>
       <input type="text" name="Name" placeholder="Enter your Full Name..">
@@ -49,10 +49,22 @@
       <div class="input-group">
         <button class="btn-lg" style="margin-left: 130px; margin-top: 5px;" type="submit" name="submit">Submit</button>
       </div>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     </div>
     </form>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"><b>Order Details Recieved Successfully!</b></h4>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button id="closebtn" type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
     <footer>
       <div class="container">
@@ -67,13 +79,28 @@
       </div>
     </footer>
 
+<script>
+  function openModal() {
+    $('#myModal').modal('show');
+    event.preventDefault();
+  }
+
+  function submitForm() {
+    var form = document.getElementById("myForm");
+    form.submit();
+  }
+
+  $('#myModal').on('hidden.bs.modal', function () {
+    submitForm();
+  });
+</script>
 
 </body>
 
 </html>
 
 <?php
-session_start();
+
 
 // initializing variables
 $username = "";
